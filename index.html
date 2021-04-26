@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Stats preview card component</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 15px;
+        color: white;
+        font-family: "Lexend Deca", sans-serif;
+      }
+      .attribution {
+        font-size: 11pt;
+        padding: 5rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        background-color: hsl(233, 47%, 7%);
+      }
+      h2,
+      h3 {
+        color: hsl(0, 0%, 100%);
+      }
+      h2,
+      span {
+        font-family: "Inter", sans-serif;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      span {
+        color: hsl(277, 64%, 61%);
+      }
+      p {
+        color:  hsla(0, 0%, 100%, 0.6);
+      }
+      section {
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        width: 60rem;
+        height: 40%;
+        display: flex;
+        border-radius: 0.5rem;
+        background-color: hsl(244, 38%, 16%);
+      }
+      .desc-wrapper {
+        flex: 1;
+      }
+      .desc {
+        width: 65%;
+        height: 100%;
+        margin: 0% 15%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+      }
+      .desc-paragraph {
+        line-height: 1.3;
+      }
+      .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .info h3 {
+        font-family: "Inter", sans-serif;
+        font-weight: 700;
+      }
+      .info p {
+        padding: 0.5rem 1rem 0.5rem 0rem;
+      }
+      .img-wrapper {
+        flex: 1;
+        background-color: hsl(277, 89%, 68%);
+        border-top-right-radius: 0.5rem;
+        border-bottom-right-radius: 0.5rem;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        mix-blend-mode: multiply;
+      }
+      @media (max-width: 900px) {
+        section {
+          height: 150vh;
+        }
+        .container {
+          flex-direction: column;
+          width: 90%;
+          height: 80%;
+          text-align: center;
+        }
+        .desc-wrapper {
+          flex: 2;
+        }
+        .desc {
+          width: 80%;
+          height: 90%;
+          margin: 1.5rem auto;
+        }
+        .desc-paragraph {
+          line-height: 1.8;
+          margin-top: 0.5rem;
+        }
+        .img-wrapper {
+          order: -1;
+        }
+        .info {
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+        .info div {
+          width: 35%;
+          text-align: center;
+          padding: 1% 0.5rem;
+        }
+        @media (max-width: 450px) {
+          .desc-paragraph {
+            margin-top: 1.5rem;
+            font-size: 13pt;
+          }
+          .info {
+            margin-top: 1rem;
+          }
+          .info div {
+            width: 50%;
+            margin: 5%;
+          }
+          .info h3 {
+            font-size: 18pt;
+            font-weight: 700;
+          }
+          .info p {
+            font-size: 13pt;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="desc-wrapper">
+          <div class="desc">
+            <h2>Get <span>insights</span> that help your business grow.</h2>
+            <p class="desc-paragraph">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+            <div class="info">
+              <div>
+                <h3>10k+</h3>
+
+                <p>Companies</p>
+              </div>
+              <div>
+                <h3>314</h3>
+                <p>Templates</p>
+              </div>
+              <div>
+                <h3>12M+</h3>
+                <p>Queries</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="img-wrapper">
+          <picture>
+            <source
+              media="(max-width:900px)"
+              srcset="images/image-header-mobile.jpg"
+            />
+            <img src="images/image-header-desktop.jpg" alt="Business-Image" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/sahir2008" target="_blank"
+        >Sahir Mohsen</a
+      >.
+    </div>
+  </body>
+</html>

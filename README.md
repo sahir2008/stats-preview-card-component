@@ -33,5 +33,5 @@ Users should be able to:
 ## Author
 
 - Website - [Sahir Mohsen](https://sahir-html-css-portfolio.netlify.app/)
-- Frontend Mentor - [@SahirMohsen](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@SahirMohsen](https://www.frontendmentor.io/profile/sahir2008)
 - Linkedin - [@SahirMohsen](https://www.linkedin.com/in/sahir-mohsen-602706128/)
